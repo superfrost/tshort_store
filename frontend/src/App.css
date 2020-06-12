@@ -103,6 +103,9 @@ a:hover{
   color: #fff;
   cursor: pointer;
 }
+.brand button:hover{
+  color: #ff6600;
+}
 .sidebar{
   position: fixed;
   transform: translateX(-30rem);
@@ -123,4 +126,56 @@ a:hover{
   font-size: 1.8rem;
   height: 3rem;
   width: 3rem;
+}
+.details{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.details-image{
+  flex: 2 1 50rem;
+}
+.details-image img{
+  max-width: 50rem;
+}
+.details-info{
+  flex: 2 1 30rem;
+}
+.details-action{
+  flex: 2 1 30rem;
+}
+.details-info ul, .details-action ul{
+  list-style: none;
+  padding: 0;
+}
+.details-info li, .details-action li{
+margin-bottom: 1rem;
+}
+.back-to-result{
+  padding: 1rem;
+}
+.details-action{
+  border: .1rem #808080 solid;
+  border-radius: .5rem;
+  background-color: #f8f8f8;
+  padding: 1rem;
+}
+.details-action li:last-child{
+  display: flex;
+  flex-direction: column;
+}
+.button{
+  padding: 1rem;
+  border: .1rem solid #808080;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+.button:hover{
+  border: .1rem solid #404040;
+  box-shadow: 0 0 0px 1px #006eff;
+  
+}
+.button.primary{
+  background-color: #ffbb00;
 }
