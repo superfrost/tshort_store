@@ -1,0 +1,135 @@
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body{
+  font: 1.6rem Helvetica;
+  height: 100vh;
+  margin: 0;
+}
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+.header{
+  grid-area: header;
+  background-color: #203040;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.brand{
+
+}
+.brand a{
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.brand a:hover{
+  color: #ff6600;
+}
+.header-links a{
+  color: #fff;
+  text-decoration: none;
+}
+.header-links a:hover{
+  color: #ff6600;
+}
+.main{
+  grid-area: main;
+}
+.footer{
+  grid-area: footer;
+  background-color: #203040;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #ff6600;
+}
+/* Main screen */
+.products{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.products li{
+  list-style-type: none;
+  padding: 0;
+  flex: 0 1 34rem;
+  margin: 1rem;
+  height: 40rem;
+  border-bottom: .1rem solid #c0c0c0;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.product-image{
+  max-width: 34rem;
+  max-height: 34rem;
+}
+.product-name{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.product-brand{
+  font-size: 1.5rem;
+  color: #464646;
+}
+.product-price{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+}
+.product-rating{
+  margin-bottom: 1rem;
+}
+
+/* Sidebar menu*/
+.brand button{
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.sidebar{
+  position: fixed;
+  transform: translateX(-30rem);
+  width: 30rem;
+  background-color: #c0c0c0;
+  height: 100%;
+  transition: all .5s;
+}
+.sidebar.open{
+  transform: translateX(0);
+}
+.sidebar-close-btn{
+  position: absolute;
+  border-radius: 50%;
+  border: .2rem #000 solid;
+  top: 5px;
+  right: 5px;
+  font-size: 1.8rem;
+  height: 3rem;
+  width: 3rem;
+}
