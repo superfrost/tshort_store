@@ -7,6 +7,7 @@ function ProductPage(props) {
   console.log(data.products);
   
   const product = data.products.find(p => p._id == props.match.params.id);
+  
   console.log(product);
   
   return (
@@ -28,7 +29,7 @@ function ProductPage(props) {
         </div>
         <div className="details-action">
           <ul>
-            <li>Price: {product.price}</li>
+            <li>Price: ${product.price}</li>
             <li>Status: {product.status}</li>
             <li>Qty: 
               <select>
